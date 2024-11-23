@@ -10,7 +10,7 @@ class Animal {
 
   // Method to make a sound
   makeSound() {
-    console.log(`The ${this._species} makes a sound`);
+    console.log(`The ${this.species} makes a sound`);
   }
 }
 
@@ -24,11 +24,6 @@ class Cat extends Animal {
     console.log("purr");
   }
 }
-
-// Example Usage
-const cat = new Cat("Siamese");
-cat.makeSound(); // Output: The Siamese makes a sound
-cat.purr(); // Output: purr
 
 // Do not change the code below this line
 window.Animal = Animal;
