@@ -1,11 +1,11 @@
 class Animal {
   constructor(species) {
-    this._species = species; // Use an internal property to avoid conflicts.
+    this.species = species; 
   }
 
   // Getter for species
   get species() {
-    return this._species;
+    return this.species;
   }
 
   // Method to make a sound
@@ -16,14 +16,28 @@ class Animal {
 
 class Cat extends Animal {
   constructor(species) {
-    super(species); // Call the parent class constructor
+    super(species); 
   }
 
-  // Method specific to Cat
   purr() {
     console.log("purr");
   }
 }
+class Dog extends Animal{
+	constructor(species){
+		super(species);
+	}
+	bark(){
+		console.log("woof")
+	}
+}
+const myCat = new Cat("Siamese");
+myCat.makeSound();
+myCat.purr();
+
+const myDog = new Dog("Golden Retriever");
+myDog.makeSound();
+myDog.bark();
 
 // Do not change the code below this line
 window.Animal = Animal;
