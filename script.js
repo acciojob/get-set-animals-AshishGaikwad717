@@ -42,3 +42,4 @@ myDog.bark();
 // Do not change the code below this line
 window.Animal = Animal;
 window.Cat = Cat;
+window.Dog= Dog;
