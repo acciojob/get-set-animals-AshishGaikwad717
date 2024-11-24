@@ -5,8 +5,11 @@ class Animal {
 
   // Getter for species
   get species() {
-    return this.species;
+    return this._species;
   }
+   set species(value){
+	   this._species=value;
+   }
 
   // Method to make a sound
   makeSound() {
